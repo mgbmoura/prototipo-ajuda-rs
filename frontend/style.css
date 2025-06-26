@@ -1,17 +1,15 @@
-/* --- Reset Básico e Estilos Globais --- */
 * {
-    box-sizing: border-box; /* Faz o cálculo de tamanho das caixas ser mais intuitivo */
+    box-sizing: border-box;
   }
   
   body {
-    font-family: 'Roboto', sans-serif; /* Fonte que importamos no HTML */
+    font-family: 'Roboto', sans-serif; 
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 20px;
   }
   
-  /* --- Layout Principal --- */
   header {
     text-align: center;
     margin-bottom: 40px;
@@ -24,27 +22,27 @@
   
   main {
     max-width: 800px;
-    margin: 0 auto; /* Centraliza o conteúdo principal na página */
+    margin: 0 auto; 
   }
   
-  /* --- Estilo dos "Cards" --- */
+
   .form-container, .list-container {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidade */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     margin-bottom: 30px;
   }
   
   h2 {
     margin-top: 0;
-    color: #0d2c54; /* Um azul mais escuro e profissional */
+    color: #0d2c54; 
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 10px;
     margin-bottom: 20px;
   }
   
-  /* --- Estilização do Formulário --- */
+
   .form-group {
     margin-bottom: 15px;
   }
@@ -89,7 +87,7 @@
     background-color: #0056b3;
   }
   
-  /* --- Estilização da Lista de Ajudas --- */
+  
   .ajuda-item {
     background-color: #fdfdfd;
     border: 1px solid #eee;
@@ -126,18 +124,18 @@
       margin-bottom: 10px;
   }
   
-  /* Cores com significado para o tipo de ajuda */
+  
   .tipo-precisa {
-    color: #D83B01; /* Laranja/Vermelho para "precisa" */
+    color: #D83B01; 
     background-color: #FDE5D9;
   }
   
   .tipo-oferece {
-    color: #107C10; /* Verde para "oferece" */
+    color: #107C10; 
     background-color: #DFF6DD;
   }
   
-  /* --- Mídia Query para Telas Pequenas (Responsividade) --- */
+  
   @media (max-width: 768px) {
     body {
       padding: 10px;
