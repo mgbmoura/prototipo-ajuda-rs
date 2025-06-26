@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroAjuda - Projeto Trindtech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Protótipo AjudaRS</h1>
+    <p>Um protótipo inspirado no site "AjudaRS" da Trindtech.</p>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Cadastre um Ponto de Ajuda</h2>
+      <form id="ajuda-form">
+        <div class="form-group">
+          <label for="nome">Seu nome ou do local</label>
+          <input type="text" id="nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="cidade">Sua cidade</label>
+          <input type="text" id="cidade" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Eu quero...</label>
+          <select id="tipo" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Precisa de Ajuda">Pedir Ajuda</option>
+            <option value="Oferece Ajuda">Oferecer Ajuda</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" rows="4" required></textarea>
+        </div>
+        
+        <button type="submit">Adicionar ao Mapa</button>
+      </form>
+    </section>
+
+    <section class="list-container">
+      <h2>Mapa de Ajudas</h2>
+      <div id="ajudas-list">
+        </div>
+    </section>
+  </main>
+  
+  <script src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+  <script src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
